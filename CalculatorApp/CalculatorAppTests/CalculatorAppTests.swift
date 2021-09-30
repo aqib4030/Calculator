@@ -7,6 +7,8 @@
 
 import XCTest
 
+@import testa
+
 class CalculatorAppTests: XCTestCase {
 
     
