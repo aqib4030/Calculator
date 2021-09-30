@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onClickSum(_ sender: Any) {
+        self.view.endEditing(true)
         if number1.text != "" && number2.text != "" {
             let num1 = Int(number1.text ?? "0")
             let num2 = Int(number2.text ?? "0")
