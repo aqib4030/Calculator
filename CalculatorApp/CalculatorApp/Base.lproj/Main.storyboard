@@ -58,18 +58,35 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickSum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mlg-jK-Wv7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTr-OR-hMY">
+                                <rect key="frame" x="20" y="812" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ccr-O1-N0s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.8" id="4ON-Ys-ePZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CTr-OR-hMY" secondAttribute="bottom" constant="50" id="VGH-11-D0A"/>
                             <constraint firstItem="ccr-O1-N0s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Wyg-9z-rh0"/>
                             <constraint firstItem="ccr-O1-N0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kUe-oa-cze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CTr-OR-hMY" secondAttribute="trailing" constant="20" id="pYB-RG-gBe"/>
+                            <constraint firstItem="CTr-OR-hMY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sVk-tb-H3l"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="number1" destination="kkx-YS-Wd7" id="TxQ-jg-COb"/>
+                        <outlet property="number2" destination="E1D-G7-rQC" id="HfR-Af-jOt"/>
+                        <outlet property="resultLabel" destination="CTr-OR-hMY" id="LUX-8s-6iP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

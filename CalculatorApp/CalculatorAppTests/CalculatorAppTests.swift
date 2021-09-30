@@ -7,10 +7,26 @@
 
 import XCTest
 
-@import testa
+@testable import CalculatorApp
 
 class CalculatorAppTests: XCTestCase {
 
+    func testSum () {
+        var num1 : Double = 10
+        var num2 : Double = 20
+        let calculator = Calculator(first: num1, second: num2)
+        
+        let sum = calculator.addition()
+        
+        
+        
+        XCTAssertEqual(sum, num1+num2)
+        
+        num2 = 10
+        num1 = 100
+        XCTAssertEqual(sum, num1+num2)
+    }
+    
     
 
 }
